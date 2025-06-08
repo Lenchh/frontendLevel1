@@ -1,0 +1,210 @@
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      background-color: #e3cdac;
+      margin: 0;
+  }
+
+  .title {
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      max-width: 100%;
+      height: auto;
+      border: 1.5px solid rgba(0, 0, 0, 0.667);
+      border-radius: 15px 50px;
+      margin: 10px 20px;
+  }
+
+  .title h1 {
+      color: rgba(211, 77, 99, 0.868);
+      margin: 0;
+  }
+
+  .title h2 {
+      color: rgba(0, 0, 0, 0.667);
+      margin: 0;
+  }
+
+  .title img {
+      max-width: 30%;
+      height: auto;
+      border-radius: 12px;
+      border: 5px outset rgba(245, 85, 112, 0.461);
+      margin: 50px 0px 50px 50px;
+  }
+
+  .titleText {
+      max-width: 70%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      word-wrap: break-word;
+  }
+
+  .container {
+      display: flex;
+      max-width: 100%;
+      height: auto;
+      column-gap: 20px;
+      justify-content: center;
+  }
+
+  .aboutMe {
+      max-width: 45%;
+      height: auto;
+      margin: 10px auto;
+      background: linear-gradient(135deg, #ddaabb, #e7cda6, #bea1ea);
+      border: 1.5px solid whitesmoke;
+      border-radius: 15px 50px 30px 5px;
+      padding: 10px;
+      color: #511212e1;
+      box-shadow: 10px 10px 10px #000000bf;
+  }
+
+  .aboutMe>*,
+  .skills>* {
+      margin: 0;
+  }
+
+  .aboutMe a {
+      color: rgb(42, 163, 82);
+      text-decoration: none;
+  }
+
+  .aboutMe a:hover {
+      border-bottom: 1px solid;
+      text-shadow: 2px 2px 5px rgb(0, 255, 85);
+  }
+
+  .aboutMe:hover,
+  .skills:hover {
+      box-shadow: 10px 10px 10px #bc7c91;
+  }
+
+  .skills {
+      max-width: 80%;
+      height: auto;
+      margin: 30px auto;
+      padding: 10px;
+      background: linear-gradient(135deg, #ddaabb, #e7cda6);
+      border: 1.5px solid whitesmoke;
+      box-shadow: 10px 10px 10px #000000bf;
+      border-radius: 15px;
+      color: #511212e1;
+  }
+
+  .skills ul,  
+  .contacts ul {
+      list-style-image: url(favicon1.ico);
+      display: flex;
+      gap: 20px;
+      flex-flow: row wrap;
+      justify-content: center;
+  }
+
+  .skills li,
+  .contacts li {
+      margin: 0 10px 0 10px;
+  }
+
+  .contacts {
+      max-width: 80%;
+      height: auto;
+      margin: 30px auto;
+      padding: 10px;
+  }
+
+  .contacts ul {
+      list-style-type: none;
+      list-style-image: none;
+  }
+
+  .contacts a,
+  .contacts a:visited {
+      text-decoration: none;
+      color: #511212e1;
+      padding: 10px;
+      border: black solid;
+      display: inline-block;
+      border-radius: 15px;
+      box-shadow: 5px 7px 10px #000000bf;
+      text-align: center;
+  }
+
+  .contacts a:hover {
+      font-size: 20px;
+      box-shadow: 7px 7px 10px #fffdfd;
+  }
+
+  .unkempt-regular {
+      font-family: "Unkempt", cursive;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  .unkempt-bold {
+      font-family: "Unkempt", cursive;
+      font-weight: 700;
+      font-style: normal;
+  }
+
+  .cinzel-regular {
+      font-family: "Average", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  @media screen and (max-width:780px) {
+      .title {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin: 0px 10px;
+          padding: 10px;
+      }
+
+      .titleText {
+          text-align: center;
+          /*max-width: 50%;*/
+      }
+
+      .title img {
+          margin: 0;
+      }
+
+      .container {
+          flex-direction: column;
+      }
+
+      .aboutMe {
+          max-width: 90%;
+          width: 90%; 
+      }
+
+      .skills ul {
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+      }
+
+      .skills li,
+      .contacts li {
+          margin: 0;
+      }
+
+      .contacts {
+          margin-bottom: 0;
+      }
+
+      .contacts ul {
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 0 auto;
+          padding: 10px;
+      }
+  }
