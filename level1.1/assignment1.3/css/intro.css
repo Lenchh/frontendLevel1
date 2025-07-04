@@ -1,0 +1,321 @@
+.intro {
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: 668px;
+}
+
+.background-image {
+    width: 100%;
+    height: 668px;
+}
+
+.title-container {
+    display: flex;
+    position: absolute;
+    top: 107px;
+    max-width: 886px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    max-width: 514px;
+    color: #FFFFFF;
+    line-height: 96px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 96px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.intro-text {
+    max-width: 866px;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 18px;
+}
+
+.intro-line {
+    display: none;
+    width: 61.05px;
+    height: 8px;
+    margin: 0 auto;
+    position: absolute;
+    top: 135px;
+    background-color: #4A4A4A;
+}
+
+.button-read-more {
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px #2B4074;
+    background-color: #2B4074;
+    position: absolute;
+    top: 405px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F9F6E5;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button-read-more:hover {
+    transform: scale(1.10);
+    background-color: #142652;
+}
+
+.pagination-intro {
+    width: 100px;
+    height: 12px;
+    position: absolute;
+    top: 578px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oval {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.oval.active {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px #FFFFFF solid;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.previous-arrow,
+.next-arrow {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 264px;
+    right: 0;
+    background-color: #2B4074;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.previous-arrow:hover {
+    background-color: #182954;
+}
+
+.next-arrow {
+    top: 335px;
+    background-color: #F9F6E5;
+}
+
+.next-arrow:hover {
+    background-color: #c4bfa7;
+}
+
+@media screen and (max-width:1024px) {
+    .title {
+        max-width: 588px;
+        line-height: 84px;
+        font-size: 84px;
+    }
+
+    .intro-text {
+        max-width: 587px;
+        font-size: 18px;
+        line-height: 20px;
+        padding-top: 55px;
+    }
+
+    .title-container {
+        top: 80px;
+        max-width: 588px;
+    }
+
+    .intro {
+        height: 618px;
+    }
+
+    .background-image {
+        height: 618px;
+    }
+
+    .button-read-more {
+        top: 366px;
+    }
+
+    .pagination-intro {
+        top: 528px;
+    }
+
+    .oval {
+        background-color: #2B4074;
+    }
+
+    .oval.active {
+        border: 1px #476E4D solid;
+    }
+
+    .previous-arrow {
+        width: 56px;
+        height: 56px;
+        top: 253px;
+    }
+
+    .next-arrow {
+        width: 56px;
+        height: 56px;
+        top: 309px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .title {
+        max-width: 588px;
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 0px;
+    }
+
+    .intro-text {
+        max-width: 560px;
+        font-size: 15px;
+        line-height: 20px;
+        padding-top: 25px;
+    }
+
+    .title-container {
+        top: 87px;
+        max-width: 589px;
+    }
+
+    .intro {
+        height: 465px;
+    }
+
+    .background-image {
+        height: 465px;
+    }
+
+    .button-read-more {
+        top: 303px;
+    }
+
+    .pagination-intro {
+        top: 403px;
+    }
+
+    .previous-arrow {
+        top: 176px;
+    }
+
+    .next-arrow {
+        top: 232px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .intro-text {
+        display: none;
+    }
+
+    .intro-line {
+        top: 125px;
+        display: block;
+    }
+
+    .button-read-more {
+        top: 250px;
+    }
+
+    .pagination-intro {
+        top: 340px;
+    }
+
+    .intro {
+        height: 386px;
+    }
+
+    .background-image {
+        height: 386px;
+    }
+
+    .previous-arrow {
+        top: 137px;
+    }
+
+    .next-arrow {
+        top: 193px;
+    }
+}
+
+@media screen and (max-width:639px) {
+    .title {
+        max-width: 320px;
+        font-size: 28px;
+        line-height: 28px;
+        margin: 0;
+    }
+
+    .intro-text {
+        display: none;
+    }
+
+    .intro-line {
+        display: block;
+    }
+
+    .title-container {
+        top: 36px;
+        max-width: 320px;
+    }
+
+    .intro {
+        height: 193px;
+    }
+
+    .background-image {
+        height: 193px;
+    }
+
+    .intro-line {
+        top: 84px;
+    }
+
+    .button-read-more {
+        display: none;
+    }
+
+    .pagination-intro {
+        top: 163px;
+    }
+
+    .previous-arrow,
+    .next-arrow {
+        display: none;
+    }
+}

@@ -1,0 +1,48 @@
+.header {
+    background-color: #2B4074;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.di-gi {
+    margin: 17px 0 17.27px 153px;
+}
+
+.menu-button {
+    margin: 30px 135px 30px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .di-gi {
+        margin-left: 46px;
+    }
+
+    .menu-button {
+        margin-right: 42px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .di-gi {
+        margin-left: 44px;
+    }
+
+    .menu-button {
+        margin-right: 41px;
+    }
+}
+
+@media screen and (max-width:639px) {
+    .di-gi {
+        margin: 7px 0 7.27px 25px;
+    }
+
+    .menu-button {
+        margin: 20px 20px 20px 0;
+    }
+}
