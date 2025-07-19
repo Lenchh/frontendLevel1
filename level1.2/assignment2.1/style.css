@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.black_square {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 10px;
+}
+
+.hiding_buttons {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+h2,
+.is_margin {
+    margin: 10px;
+}
+
+.block_squares {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    list-style-image: none;
+    padding: 0;
+}
+
+.yellow_quad {
+    background-color: yellow;
+}
+
+.no_display {
+    display: none;
+}
+
+.red_quad {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 10px;
+    visibility: hidden;
+}
+
+.green_quad {
+    width: 50px;
+    height: 20px;
+    background-color: green;
+    margin: 10px;
+    visibility: hidden;
+}
+
+.img_task8 {
+    margin: 10px;
+    max-width: 200px;
+}
+
+.task10 {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+}
+
+.task13 {
+    margin: 10px;
+    background-color: rgb(178, 176, 176);
+}
+
+.button_task14 {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    font-size: 20px;
+}
+
+.outer_block {
+    width: 150px;
+    height: 100px;
+    background-color: rgb(51, 82, 139);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_block {
+    width: 60%;
+    padding: 20px;
+    background-color: rgb(188, 218, 245);
+}
+
+.grey_quad {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.label_task18 {
+    background-color: rgb(73, 109, 176);
+    border: 3px aliceblue solid;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.label_task18:hover {
+    background-color: rgb(56, 82, 131);
+    border-color: black;
+    color: black;
+}
+
+.label_task18.dragover {
+    border-color: aqua;
+}
+
+.new_border {
+    border-color: rgb(12, 192, 12);
+}
