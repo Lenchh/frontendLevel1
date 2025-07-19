@@ -1,0 +1,1 @@
+Here is the solution to the assignment 1 of the sub-level 1.2 - 18 mini-assignments https://lenchh.github.io/js_assignments/
