@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table,
+th,
+td {
+    border-spacing: 10px;
+    color: black;
+}
+
+table {
+    width: 95%;
+    margin: 30px auto;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+th {
+    background-color: rgba(116, 72, 93, 0.409);
+    color: rgb(41, 44, 46);
+    border-color: white;
+}
+
+td:hover,
+tr:hover {
+    box-shadow: 0 0 13px rgb(84, 37, 59);
+}
+
+tr:hover td {
+    color: rgb(136, 8, 8);
+}
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rect-color {
+    width: 40px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.add-button {
+    background-color: rgba(116, 72, 93, 0.409);
+    color: black;
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    margin: 30px 0 0 40px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.add-button:hover {
+    box-shadow: 0 0 13px rgb(199, 186, 192);
+    color: rgb(199, 186, 192);
+}
+
+.modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 1px solid rgb(199, 186, 192);
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0 0 13px rgb(210, 157, 182);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.input-and-label {
+    margin: 5px;
+}
+
+.current-input {
+    width: 50%;
+    max-width: 250px;
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 70%;
+    padding-right: 10px;
+}
+
+.save-button {
+    position: relative;
+    left: 50%;
+    background-color: rgba(107, 62, 84, 0.884);
+    color: white;
+    border: 1px solid white;
+    width: 120px;
+    height: 25px;
+    margin: 10px 10px 0 0;
+}
+
+.save-button:hover {
+    box-shadow: 0 0 13px rgba(255, 255, 255, 0.884);
+    color:rgba(244, 233, 238, 0.884);
+}
+
+.close-button {
+    color: black;
+    border: 1px solid black;
+}
+
+.close-button:hover {
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.884);
+}
+
+img {
+    max-width: 100px;
+}
+
+.remove-button {
+    background-color: red;
+    margin-right: 10px;
+}
+
+.edit-button {
+    background-color: yellow;
+}
