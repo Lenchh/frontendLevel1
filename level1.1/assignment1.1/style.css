@@ -1,210 +1,246 @@
-  * {
-      box-sizing: border-box;
-  }
+* {
+    box-sizing: border-box;
+}
 
-  body {
-      background-color: #e3cdac;
-      margin: 0;
-  }
+body,
+html {
+    margin: 0;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
-  .title {
-      display: flex;
-      column-gap: 20px;
-      align-items: center;
-      max-width: 100%;
-      height: auto;
-      border: 1.5px solid rgba(0, 0, 0, 0.667);
-      border-radius: 15px 50px;
-      margin: 10px 20px;
-  }
+a {
+    text-decoration: none;
+}
 
-  .title h1 {
-      color: rgba(211, 77, 99, 0.868);
-      margin: 0;
-  }
+ul {
+    padding: 0;
+}
 
-  .title h2 {
-      color: rgba(0, 0, 0, 0.667);
-      margin: 0;
-  }
+.header, .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    max-width: 1440px;
+    width: 80%;
+    background-color: rgba(15, 15, 15, 0.662);
+    border: 2px black solid;
+    border-radius: 15px 50px;
+    box-shadow: 10px 10px 0px rgb(16, 16, 16); 
+}
 
-  .title img {
-      max-width: 30%;
-      height: auto;
-      border-radius: 12px;
-      border: 5px outset rgba(245, 85, 112, 0.461);
-      margin: 50px 0px 50px 50px;
-  }
+.avatar {
+    max-width: 300px;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    border: 2px black solid;
+    border-radius: 12px;
+}
 
-  .titleText {
-      max-width: 70%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      word-wrap: break-word;
-  }
+.title {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding-left: 10px;
+}
 
-  .container {
-      display: flex;
-      max-width: 100%;
-      height: auto;
-      column-gap: 20px;
-      justify-content: center;
-  }
+.title h1 {
+    font-size: clamp(17px, 2vw, 32px);
+}
 
-  .aboutMe {
-      max-width: 45%;
-      height: auto;
-      margin: 10px auto;
-      background: linear-gradient(135deg, #ddaabb, #e7cda6, #bea1ea);
-      border: 1.5px solid whitesmoke;
-      border-radius: 15px 50px 30px 5px;
-      padding: 10px;
-      color: #511212e1;
-      box-shadow: 10px 10px 10px #000000bf;
-  }
+.title h2 {
+    font-size: clamp(14px, 2vw, 24px);
+}
 
-  .aboutMe>*,
-  .skills>* {
-      margin: 0;
-  }
+.main {
+    display: flex;
+    max-width: 1440px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-  .aboutMe a {
-      color: rgb(42, 163, 82);
-      text-decoration: none;
-  }
+.block-information {
+    width: 45%;
+    padding: 20px;
+    margin: 0;
+    background-color: rgba(61, 60, 60, 0.82);
+    border-radius: 20px;
+    box-shadow: 6px 8px 0px rgba(255, 254, 254, 0.594); 
+}
 
-  .aboutMe a:hover {
-      border-bottom: 1px solid;
-      text-shadow: 2px 2px 5px rgb(0, 255, 85);
-  }
+.block-information h2 {
+    width: 80%;
+    font-size: clamp(14px, 2vw, 22px);
+    background-color: rgba(0, 0, 0, 0.662);
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    transition: width 1.5s;
+}
 
-  .aboutMe:hover,
-  .skills:hover {
-      box-shadow: 10px 10px 10px #bc7c91;
-  }
+.block-information p, .block-information li, .footer a {
+    font-size: clamp(12px, 2vw, 17px);
+    color: rgb(248, 244, 244);
+}
 
-  .skills {
-      max-width: 80%;
-      height: auto;
-      margin: 30px auto;
-      padding: 10px;
-      background: linear-gradient(135deg, #ddaabb, #e7cda6);
-      border: 1.5px solid whitesmoke;
-      box-shadow: 10px 10px 10px #000000bf;
-      border-radius: 15px;
-      color: #511212e1;
-  }
+.img-portfolio {
+    max-width: 100px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
 
-  .skills ul,  
-  .contacts ul {
-      list-style-image: url(favicon1.ico);
-      display: flex;
-      gap: 20px;
-      flex-flow: row wrap;
-      justify-content: center;
-  }
+.img-portfolio:hover {
+    border: 2px black solid;
+}
 
-  .skills li,
-  .contacts li {
-      margin: 0 10px 0 10px;
-  }
+.block-information:hover {
+    box-shadow: 8px 10px 10px rgba(195, 193, 193, 0.808); 
+}
 
-  .contacts {
-      max-width: 80%;
-      height: auto;
-      margin: 30px auto;
-      padding: 10px;
-  }
+.block-information:hover h2 {
+    width: 50%;
+    box-shadow: 8px 10px 0px rgba(0, 0, 0, 0.842); 
+}
 
-  .contacts ul {
-      list-style-type: none;
-      list-style-image: none;
-  }
+.container-for-blocks {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    justify-content: space-around;
+    gap: 20px;
+}
 
-  .contacts a,
-  .contacts a:visited {
-      text-decoration: none;
-      color: #511212e1;
-      padding: 10px;
-      border: black solid;
-      display: inline-block;
-      border-radius: 15px;
-      box-shadow: 5px 7px 10px #000000bf;
-      text-align: center;
-  }
+.container-for-blocks .block-information {
+    width: 100%;
+}
 
-  .contacts a:hover {
-      font-size: 20px;
-      box-shadow: 7px 7px 10px #fffdfd;
-  }
+.diploma {
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 5px rgb(251, 251, 250);
+    border-radius: 4px;
+}
 
-  .unkempt-regular {
-      font-family: "Unkempt", cursive;
-      font-weight: 400;
-      font-style: normal;
-  }
+.diploma:hover {
+    border: 2px rgb(255, 255, 255) solid;
+}
 
-  .unkempt-bold {
-      font-family: "Unkempt", cursive;
-      font-weight: 700;
-      font-style: normal;
-  }
+.skill, .language {
+    display:inline-block;
+    border: 5px black double;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
 
-  .cinzel-regular {
-      font-family: "Average", serif;
-      font-weight: 400;
-      font-style: normal;
-  }
+.language {
+    border: 5px rgb(184, 183, 183) double;
+}
 
-  @media screen and (max-width:780px) {
-      .title {
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          margin: 0px 10px;
-          padding: 10px;
-      }
+.footer {
+    justify-content: center;
+    border-radius: 15px;
+    margin: 15px auto;
+}
 
-      .titleText {
-          text-align: center;
-          /*max-width: 50%;*/
-      }
+.footer a {
+    margin: 5px;
+    padding: 5px;
+    background-color: black;
+    border: 1px black solid;
+    border-radius: 10px;
+}
 
-      .title img {
-          margin: 0;
-      }
+.footer a:hover {
+    border: 1px white dashed;
+}
 
-      .container {
-          flex-direction: column;
-      }
 
-      .aboutMe {
-          max-width: 90%;
-          width: 90%; 
-      }
+@media screen and (max-width:1024px) {
+    .title{
+        padding-left: 20px;
+    }
+}
 
-      .skills ul {
-          flex-direction: column;
-          justify-content: center;
-          align-content: center;
-      }
+@media screen and (max-width:768px) {
+    .title {
+       padding-left: 30px;
+    }
+}
 
-      .skills li,
-      .contacts li {
-          margin: 0;
-      }
+@media screen and (max-width:639px) {
+    .header {
+        flex-direction: column;
+        border-radius: 50px 15px;
+        box-shadow: 10px 10px 0px rgba(212, 211, 211, 0.781);
+    }
+    .avatar {
+        width: 80%;
+        align-self: flex-start;
+    }
+    .title {
+        width: 80%;
+        text-align:right;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .container-for-blocks {
+        flex-direction: row;
+        width: 100%;
+        gap: 0;
+    }
+    .container-for-blocks .block-information {
+    width: 45%;
+    }
+    .block-information {
+        width: 100%;
+        box-shadow: 6px 8px 0px rgba(212, 211, 211, 0.781); 
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
 
-      .contacts {
-          margin-bottom: 0;
-      }
+@media screen and (max-width:450px) {
+    .container-for-blocks {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container-for-blocks .block-information {
+    width: 100%;
+    }
+}
 
-      .contacts ul {
-          flex-direction: column;
-          justify-content: center;
-          align-content: center;
-          margin: 0 auto;
-          padding: 10px;
-      }
-  }
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.edu-nsw-act-cursive {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
